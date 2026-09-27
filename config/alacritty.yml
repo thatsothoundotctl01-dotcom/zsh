@@ -1,0 +1,22 @@
+# ~/.config/alacritty/alacritty.yml
+# NOTE: Only use this if `alacritty --version` shows < 0.13.
+# Newer versions use alacritty.toml instead (see config/alacritty.toml).
+
+window:
+  opacity: 0.75
+  decorations: none
+  startup_mode: Fullscreen
+  padding:
+    x: 10
+    y: 10
+
+font:
+  normal:
+    family: "IosevkaTerm Nerd Font Mono"
+  size: 11.0
+
+key_bindings:
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus,  mods: Control, action: DecreaseFontSize }
+  - { key: Key0,   mods: Control, action: ResetFontSize }
+  - { key: F11,    mods: None,    action: ToggleFullscreen }
