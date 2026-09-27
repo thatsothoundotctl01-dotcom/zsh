@@ -1,0 +1,31 @@
+[window]
+opacity = 0.75
+decorations = "none"
+startup_mode = "Fullscreen"
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+normal = { family = "IosevkaTerm Nerd Font Mono" }
+size = 11.0
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
