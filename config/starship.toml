@@ -1,0 +1,56 @@
+# ~/.config/starship.toml
+# Clean icon+arrow prompt with distro logo support.
+# Requires a Nerd Font (e.g. IosevkaTerm Nerd Font Mono, FiraCode Nerd Font).
+
+format = """
+$directory\
+$os\
+$git_branch\
+$git_status\
+$character"""
+
+[directory]
+style = "blue bold"
+truncation_length = 1
+truncate_to_repo = true
+
+# ---------------------------------------------------------------------------
+# OS module — shows the current distro's logo automatically.
+# Only the icon for the OS you're actually running on will display;
+# the symbols table below is just a reference of what's available.
+# ---------------------------------------------------------------------------
+[os]
+format = "[$symbol](bold red) "
+disabled = false
+
+[os.symbols]
+Ubuntu = "󰕈"
+Arch = "󰣇"
+Debian = "󰣚"
+Fedora = "󰣛"
+Manjaro = "󱘊"
+Mint = "󰣭"
+openSUSE = ""
+Pop = ""
+Raspbian = "󰐿"
+Redhat = "󱄛"
+Alpine = ""
+CentOS = ""
+Gentoo = "󰣨"
+NixOS = "󱄅"
+Windows = "󰍲"
+Macos = ""
+Linux = "󰌽"
+
+[git_branch]
+symbol = " "
+style = "purple bold"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "red bold"
+format = "([$all_status$ahead_behind]($style)) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
